@@ -134,6 +134,7 @@ function HistogramPanelWrapper({
 				setLegendScrollPosition: (position: number) => {
 					legendScrollPositionRef.current = position;
 				},
+				colorMapping: widget?.customLegendColors,
 			}),
 		[
 			containerDimensions,
@@ -148,6 +149,7 @@ function HistogramPanelWrapper({
 			clickHandlerWithContextMenu,
 			enableDrillDown,
 			onClickHandler,
+			widget.customLegendColors,
 		],
 	);
 
